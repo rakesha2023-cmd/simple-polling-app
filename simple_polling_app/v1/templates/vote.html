@@ -1,0 +1,8 @@
+
+<h2>{{ poll.question }}</h2>
+<form method="post">
+{% for opt in poll.options %}
+<input type="radio" name="option" value="{{ loop.index0 }}">{{ opt }}<br>
+{% endfor %}
+<button type="submit">Vote</button>
+</form>

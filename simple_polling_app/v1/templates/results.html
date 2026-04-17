@@ -1,0 +1,7 @@
+
+<h2>{{ poll.question }}</h2>
+<ul>
+{% for opt in poll.options %}
+<li>{{ opt }} - {{ poll.votes[loop.index0] }} votes</li>
+{% endfor %}
+</ul>
